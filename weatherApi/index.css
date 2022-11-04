@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+     background-color: #282A35;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Comfortaa', cursive;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90vh;
+    margin-top: 3rem;
+    padding: 1.2rem;
+    background-color: #272830;
+    position: relative;
+    height: 400px;
+}
+.app .app_header{
+   padding-top: 2.5rem;
+   padding-bottom: 1.5rem;
+}
+.app_header input{
+    margin-top: 1.8rem;
+    width: 100%;
+}
+.app_header h1{
+    color : #FFBB32;
+    text-align: center;
+}
+.app .app_cont {
+    color: #FFBB32;
+    text-align: center;
+}
+#cityBar{
+    background-color: #282A35;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: rgb(132, 123, 123);
+    padding: 0.4rem;
+}
+.app #img{
+position: absolute;
+height: 45%;
+left: 0.5rem;
+bottom: 0px;
+}
+.city{
+    font-size:1.5rem;
+    padding-bottom: 0.5rem;
+}
+.text{
+    font-size: 1.5rem;
+}
+.temp{
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#btn{
+    height: 50%;
+    position: absolute;
+    top: 2rem;
+    right:-6rem;
+    background-color: #16278d;
+    border: 0;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    border-radius: 10px;
+}
+#btn:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #0e1b68;
+}
+@media screen and (max-width: 768px){
+    .app #img {
+        height: 20%;
+        left: -1.2rem;
+    }
+    .app_header h1{
+        font-size: 1.8rem; 
+    }
+    .app_cont{
+        font-size: 0.7rem;
+    }
+    .city{
+        font-size:0.8rem;
+        padding-bottom: 0.5rem;
+    }
+    .text{
+        font-size: 0.8rem;
+    }
+    .temp{
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    #cityBar{
+        outline: 0;
+    }
+    .app{
+        width: 30vh;
+    }
+    
+    #btn{
+        height: 40%;
+        position: absolute;
+        font-size: 10px;
+        right: -1rem;
+    }
+    #cityBar{
+        width: 100px;
+    }
+
+}
+
+
+
+
